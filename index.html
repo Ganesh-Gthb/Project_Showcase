@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DevOps Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <span class="nav-logo">~/devops-portfolio</span>
+    <ul class="nav-links">
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="terminal-window">
+        <div class="terminal-bar">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="terminal-title">bash — devops-engineer</span>
+        </div>
+        <div class="terminal-body">
+          <p class="terminal-line"><span class="prompt">$</span> <span class="cmd">whoami</span></p>
+          <p class="terminal-output">devops-engineer</p>
+          <p class="terminal-line"><span class="prompt">$</span> <span class="cmd">cat mission.txt</span></p>
+          <p class="terminal-output tagline">Infrastructure engineered.<br/>Pipelines automated.<br/>Delivered at scale.<span class="cursor">▋</span></p>
+        </div>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num">3</span><span class="stat-label">Projects Deployed</span></div>
+        <div class="stat"><span class="stat-num">5x</span><span class="stat-label">Faster Deployments</span></div>
+        <div class="stat"><span class="stat-num">3</span><span class="stat-label">Cloud Tiers Managed</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section" id="skills">
+    <div class="container">
+      <h2 class="section-title">Core Competencies</h2>
+      <div class="skills-grid">
+
+        <div class="skill-card fade-in">
+          <p class="skill-category"><span class="icon">☁</span> Cloud Platforms</p>
+          <div class="tags">
+            <span class="tag">AWS EC2</span>
+            <span class="tag">S3</span>
+            <span class="tag">IAM</span>
+            <span class="tag">VPC</span>
+            <span class="tag">Security Groups</span>
+          </div>
+        </div>
+
+        <div class="skill-card fade-in">
+          <p class="skill-category"><span class="icon">⚙</span> Infrastructure as Code</p>
+          <div class="tags">
+            <span class="tag">Terraform</span>
+          </div>
+        </div>
+
+        <div class="skill-card fade-in">
+          <p class="skill-category"><span class="icon">🔄</span> CI/CD Tools</p>
+          <div class="tags">
+            <span class="tag">Jenkins</span>
+            <span class="tag">Git</span>
+          </div>
+        </div>
+
+        <div class="skill-card fade-in">
+          <p class="skill-category"><span class="icon">🐳</span> Containers & Orchestration</p>
+          <div class="tags">
+            <span class="tag">Docker</span>
+            <span class="tag">Kubernetes</span>
+          </div>
+        </div>
+
+        <div class="skill-card fade-in">
+          <p class="skill-category"><span class="icon">🔧</span> Configuration Management</p>
+          <div class="tags">
+            <span class="tag">Ansible</span>
+          </div>
+        </div>
+
+        <div class="skill-card fade-in">
+          <p class="skill-category"><span class="icon">📊</span> Monitoring & Automation</p>
+          <div class="tags">
+            <span class="tag">CloudWatch</span>
+            <span class="tag">Bash Scripting</span>
+          </div>
+        </div>
+
+        <div class="skill-card fade-in">
+          <p class="skill-category"><span class="icon">🖥</span> Operating Systems</p>
+          <div class="tags">
+            <span class="tag">Linux</span>
+            <span class="tag">Windows</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+
+      <div class="project fade-in">
+        <div class="project-number">01</div>
+        <div class="project-content">
+          <h3 class="project-title">Three-Tier Architecture Deployment on AWS</h3>
+          <ul class="project-bullets">
+            <li>Designed and deployed a highly available 3-tier web application using AWS EC2, S3, and VPC</li>
+            <li>Configured Load Balancer and Auto Scaling Groups for horizontal scalability</li>
+            <li>Containerized the web app using Docker and automated infrastructure provisioning with Terraform</li>
+            <li>Demonstrated Infrastructure-as-Code principles and environment reproducibility</li>
+          </ul>
+          <div class="tech-stack">
+            <span class="tag">AWS EC2</span>
+            <span class="tag">S3</span>
+            <span class="tag">VPC</span>
+            <span class="tag">Load Balancer</span>
+            <span class="tag">Auto Scaling</span>
+            <span class="tag">Docker</span>
+            <span class="tag">Terraform</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project fade-in">
+        <div class="project-number">02</div>
+        <div class="project-content">
+          <h3 class="project-title">CI/CD Pipeline for Dockerized Static Web Application</h3>
+          <ul class="project-bullets">
+            <li>Implemented an end-to-end CI/CD pipeline using Jenkins and Docker for automated builds and deployments</li>
+            <li>Created a Jenkinsfile defining build, test, and deployment stages</li>
+            <li>Reduced deployment time from 30 minutes to under 5 minutes through automation</li>
+          </ul>
+          <div class="highlight-box">⚡ 30 min → 5 min deployment time</div>
+          <div class="tech-stack">
+            <span class="tag">Jenkins</span>
+            <span class="tag">Docker</span>
+            <span class="tag">CI/CD</span>
+            <span class="tag">Jenkinsfile</span>
+            <span class="tag">Automation</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project fade-in">
+        <div class="project-number">03</div>
+        <div class="project-content">
+          <h3 class="project-title">Multi-Branch Jenkins Pipeline for 3-Tier Web Application</h3>
+          <ul class="project-bullets">
+            <li>Built Docker containers for web, application, and database tiers</li>
+            <li>Configured Jenkins multi-branch pipelines to manage branch-specific deployment workflows</li>
+            <li>Used Docker Compose to orchestrate containerized environments for development, staging, and production</li>
+          </ul>
+          <div class="tech-stack">
+            <span class="tag">Docker</span>
+            <span class="tag">Docker Compose</span>
+            <span class="tag">Jenkins</span>
+            <span class="tag">Multi-Branch Pipeline</span>
+            <span class="tag">DevOps</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="container contact-box">
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="contact-sub">Open to DevOps, Cloud, and Infrastructure roles.</p>
+      <div class="contact-links">
+        <a href="mailto:your@email.com" class="contact-btn">✉ tsriganesh25@gmail.com</a>
+        <a href="https://github.com/Ganesh-Gthb" target="_blank" class="contact-btn">⌥ Ganesh-Gthb</a>
+        <a href="http://ganesh-gthb.github.io/Portfolio/" target="_blank" class="contact-btn">Portfolio</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <span>Built with passion for infrastructure</span>
+    <span class="footer-sep">·</span>
+    <span class="footer-name">Sriganesh T</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
